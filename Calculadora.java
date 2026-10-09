@@ -1,4 +1,5 @@
-// Versión 1.2 - Práctica de Entornos de Desarrollo
+// Versión 2.0
+//  - Práctica de Entornos de Desarrollo
 import java.util.Scanner;
 
 public class Calculadora {
@@ -14,7 +15,8 @@ public class Calculadora {
             System.out.println("3. Multiplicación");
             System.out.println("4. División");
             System.out.println("5. Potencia");
-            System.out.print("Elige una operación (1-5): ");
+            System.out.println("6. Raíz cuadrada (no implementada en esta versión)");
+            System.out.print("Elige una operación (1-6): ");
             operacion = scanner.nextInt();
             
 			System.out.print("Ingresa el primer número: ");
@@ -47,6 +49,9 @@ public class Calculadora {
                 case 5 -> {
                     resultado = Math.pow(num1, num2);
                     System.out.println("Resultado: " + num1 + " ^ " + num2 + " = " + resultado);
+                }
+                case 6 -> {
+                    System.out.println("Raíz cuadrada no implementada en esta versión.");
                 }
                 default -> System.out.println("Opción no válida.");
             }
