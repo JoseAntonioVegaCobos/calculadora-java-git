@@ -9,6 +9,7 @@ public class Calculadora {
         try (Scanner scanner = new Scanner(System.in)) {
             double num1, num2, resultado;
             int operacion;
+            System.out.println("=== Hola main nuevo saludo ===");
             System.out.println("=== CALCULADORA BÁSICA EN JAVA ===");
             System.out.println("1. Suma");
             System.out.println("2. Resta");
